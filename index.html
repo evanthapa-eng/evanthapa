@@ -62,7 +62,7 @@ section { padding: 54px 20px; }
 
 
 /* Reveal on scroll */
-.reveal { opacity:0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.reveal { opacity: 1; transform: none; transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity:1; transform:none; }
 
 
@@ -79,26 +79,4 @@ section { padding: 54px 20px; }
 
 
 /* Before/After slider */
-.ba { position:relative; aspect-ratio: 16/9; border-radius: 16px; overflow:hidden; border:1px solid var(--line); }
-.ba img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-.ba .after { width:50%; overflow:hidden; border-right: 2px solid #fff; }
-.ba .after img { clip-path: inset(0 0 0 0); }
-.ba input[type=range] { position:absolute; inset:0; width:100%; -webkit-appearance:none; background:transparent; }
-.ba input::-webkit-slider-thumb { -webkit-appearance:none; width:2px; height:100vh; background:#fff; box-shadow:0 0 0 9999px transparent; }
-
-
-/* Gallery */
-.gallery { display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; }
-.gallery a { display:block; border-radius:12px; overflow:hidden; border:1px solid var(--line); }
-.gallery img { width:100%; height:100%; aspect-ratio: 1/1; object-fit:cover; display:block; }
-
-
-/* Skills */
-.skills { display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; }
-.meter { background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid var(--line); border-radius:12px; padding:12px; }
-.bar { height:10px; border-radius:999px; background: rgba(134,183,255,.18); overflow:hidden; }
-.bar span { display:block; height:100%; width:0; background: linear-gradient(90deg, #60a5fa, #a78bfa); transition: width 1.2s ease; }
-
-
-/* Timeline */
 </html>
